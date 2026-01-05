@@ -1,0 +1,65 @@
+.grid1-1 {
+  display: flex;
+  gap: 120px;
+  margin: 50px;
+  margin-bottom: 100px;
+  padding: 100px;
+  margin-left: 80px;
+  text-align: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.grid1-1 img {
+  width: 450px;
+}
+@media (min-width: 840px) {
+  .tekstbox {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .push-right {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  .push-left {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+@media (max-width: 840px) {
+  .overskrift {
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+
+  .grid1-1 img {
+    width: 250px;
+  }
+  .grid1-1 {
+    display: flex;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 0px;
+    align-items: center;
+    gap: 10px;
+    max-width: 65ch;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 840px) {
+  .button3:hover img {
+    transform: scale(1.1);
+  }
+}

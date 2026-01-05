@@ -1,0 +1,144 @@
+a {
+  text-decoration: none;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 1.1rem;
+  color: var(--color-blaa);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 840px) {
+  .grid1-1-1,
+  .grid1-1-1m {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px;
+    gap: 10px;
+  }
+  .grid1-1-1 img {
+    margin-top: 120px;
+  }
+
+  .grid1-1-1m img {
+    margin-top: 0px;
+  }
+
+  .grid1-1-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px;
+    margin-bottom: 200px;
+    gap: 10px;
+  }
+  .grid1-1-12 img {
+    height: 300px;
+    place-items: center;
+    margin-inline: auto;
+  }
+
+  .grid1-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 90px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .grid1-12 img {
+    padding-right: 70px;
+    padding-bottom: 100px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .divnavn {
+    margin-bottom: 80px;
+  }
+  .divnavn2 {
+    margin-top: 31px;
+  }
+
+  .grid1-1--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    place-items: center;
+    margin-inline: auto;
+    padding: 0 70px 0 70px;
+    margin-bottom: 200px;
+  }
+
+  .grid1-122 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 90px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 840px) {
+  .overskrifter {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .grid1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-inline: auto;
+  }
+
+  .grid1-1-1 img {
+    padding: 20px;
+    margin: 0 0 20px 20px;
+  }
+
+  .grid1-1-1m img {
+    padding: 20px;
+    margin: 0 0 20px 20px;
+  }
+
+  .grid1-1-12 img {
+    padding: 20px;
+    height: 150px;
+  }
+
+  .grid1-12 {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .grid1-122 {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .grid1-12 img {
+    margin-top: 5px;
+  }
+
+  .grid1-1--2 {
+    padding: 0 30px 0 30px;
+  }
+
+  .grid1-1--2 img {
+    margin-top: 10px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  p {
+    max-width: 65ch;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}

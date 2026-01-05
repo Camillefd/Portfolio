@@ -1,0 +1,104 @@
+.overskrift2 {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+@media (min-width: 840px) {
+  .lmak p {
+    text-align: center;
+    margin-inline: auto;
+    padding: 15px;
+  }
+
+  .tekstbox {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    padding: 30px;
+    border: 1px solid var(--color-orange);
+  }
+
+  .grid1-05-1 {
+    position: relative;
+    display: flex;
+    margin: 100px;
+    margin-bottom: 220px;
+    text-align: center;
+  }
+
+  .grid1-05-1:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .grid1-05-1:nth-child(even) img {
+    margin-left: 150px;
+  }
+
+  .grid1-05-1:nth-child(even) .tekstbox {
+    right: auto;
+    left: 20%;
+  }
+
+  .billeder {
+    width: 600px;
+    object-fit: cover;
+  }
+
+  .tekstbox {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .push-right {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  .push-left {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+@media (max-width: 840px) {
+  .overskrift {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .overskrift2 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .grid1-05-1 {
+    display: flex;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--color-orange);
+    text-align: center;
+  }
+  .grid1-05-1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 0px;
+  }
+  .grid1-05-1 p {
+    padding-top: 10px;
+  }
+  .billedes img {
+    object-position: -40px;
+  }
+}
